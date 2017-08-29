@@ -35,7 +35,7 @@ class TableBuilder {
             return (callback) => {
                 clearTimeout(timer);
                 timer = setTimeout(callback, 300);
-            }
+            };
         })();
 
         $('#dtSearch').keydown(function(e) {
@@ -75,7 +75,7 @@ class TableBuilder {
         }
 
         return html;
-    };
+    }
 
     // Генерация HTML-кода строк для всех объектов в буфере
     drawRowsFromBuffer() {
